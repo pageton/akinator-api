@@ -1,0 +1,18 @@
+{
+  "name": "akinator-api",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.12.0",
+    "@hono/swagger-ui": "^0.4.0",
+    "@hono/zod-openapi": "^0.15.1",
+    "akinatorjs": "^1.0.6",
+    "hono": "^4.5.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1"
+  }
+}
