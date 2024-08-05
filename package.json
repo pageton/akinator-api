@@ -1,7 +1,10 @@
 {
   "name": "akinator-api",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "start": "pm2 start src/index.ts",
+    "stop": "pm2 stop index",
+    "delete": "pm2 delete index"
   },
   "dependencies": {
     "@hono/node-server": "^1.12.0",
@@ -9,6 +12,7 @@
     "@hono/zod-openapi": "^0.15.1",
     "akinatorjs": "latest",
     "hono": "^4.5.2",
+    "pm2": "^5.4.2",
     "zod": "^3.23.8"
   },
   "devDependencies": {
